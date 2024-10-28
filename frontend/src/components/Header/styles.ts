@@ -6,32 +6,21 @@ export const HeaderDiv = styled.div `
 `
 
 export const HeaderContainer = styled.div`
-  max-width: 74rem;
-  padding: 10px 20px;
   display: flex;
-  margin: 0 auto;
+  padding: 32px 160px 32px 160px;
   justify-content: space-between;
   align-items: center;
 `;
 
 export const HeaderLogo = styled.img`
-  width: 200px;
-  height: auto;
+  margin-left: 120px;
+  width: 85px;
+  height: 40px;
 `;
 
 export const NavMenu = styled.nav`
   display: flex;
   gap: 20px;
-
-  & a {
-    color: ${(props) => props.theme["base-title"]};
-    font-weight: bold;
-    text-decoration: none;
-
-    &:hover {
-      color: ${(props) => props.theme["base-subtitle"]};
-    }
-  }
 `;
 
 export const NavLink = styled.a``;
