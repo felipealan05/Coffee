@@ -1,13 +1,13 @@
 import { useLocation } from 'react-router-dom'
 import {
-  CheckoutCointainer,
+  CheckoutContainer,
   ContainerSide,
   DeliveryCardContainer,
-  DevilveryContainer,
+  DeliveryContainer,
   IconContainer,
   InfoCard,
   SubTitleContainer,
-  TextAdress,
+  TextAddress,
   TextContainer,
   TitleCart,
 } from './styles'
@@ -26,11 +26,11 @@ export function Checkout() {
   }, [removeAll])
 
   return (
-    <CheckoutCointainer>
+    <CheckoutContainer>
       <ContainerSide>
-        <DevilveryContainer>
+        <DeliveryContainer>
           <TextContainer>
-            <TitleCart>Uhu! Pedido confirmado!</TitleCart>
+            <TitleCart>Aoba! Pedido confirmado!</TitleCart>
             <SubTitleContainer>
               Agora é só aguardar que logo o café chegará até você
             </SubTitleContainer>
@@ -41,20 +41,20 @@ export function Checkout() {
                 <MapPin weight="fill" color="white" />
               </IconContainer>
               <TextContainer>
-                <TextAdress>
+                <TextAddress>
                   Entrega em:{' '}
                   <b>
                     {location.state?.adress.rua},{' '}
                     {location.state?.adress.numero}
                   </b>
-                </TextAdress>
-                <TextAdress>
+                </TextAddress>
+                <TextAddress>
                   {location.state?.adress.bairro} -{' '}
                   {location.state.adress.complemento
                     ? location.state.adress.complemento
                     : null}{' '}
                   - {location.state?.adress.cidade}, {location.state?.adress.uf}
-                </TextAdress>
+                </TextAddress>
               </TextContainer>
             </InfoCard>
             <InfoCard>
@@ -62,10 +62,10 @@ export function Checkout() {
                 <Clock weight="fill" color="white" />
               </IconContainer>
               <TextContainer>
-                <TextAdress>Previsão de entrega:</TextAdress>
-                <TextAdress>
+                <TextAddress>Previsão de entrega:</TextAddress>
+                <TextAddress>
                   <b>20 min - 30 min</b>
-                </TextAdress>
+                </TextAddress>
               </TextContainer>
             </InfoCard>
             <InfoCard>
@@ -73,14 +73,14 @@ export function Checkout() {
                 <CurrencyDollarSimple weight="fill" color="white" />
               </IconContainer>
               <TextContainer>
-                <TextAdress>Pagamento na Entrega</TextAdress>
-                <TextAdress>
+                <TextAddress>Pagamento na Entrega</TextAddress>
+                <TextAddress>
                   <b>{location.state.methodPayment}</b>
-                </TextAdress>
+                </TextAddress>
               </TextContainer>
             </InfoCard>
           </DeliveryCardContainer>
-        </DevilveryContainer>
+        </DeliveryContainer>
         <>
           <Lottie
             animationData={Delivery}
@@ -89,6 +89,6 @@ export function Checkout() {
           />
         </>
       </ContainerSide>
-    </CheckoutCointainer>
+    </CheckoutContainer>
   )
 }

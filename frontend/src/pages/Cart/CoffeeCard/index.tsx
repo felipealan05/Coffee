@@ -29,7 +29,8 @@ export function CoffeeCard({
   const [totalValue, setValueTotal] = useState(valueTotal)
   const { updateList, removeList } = useContext(CartContext)
 
-  function handleChangeAmount(plus: boolean) {
+  function handleChangeAmount(plus: boolean) 
+  {
     if (plus) {
       setAmount((state) => state + 1)
       setValueTotal((state) => state + value)
@@ -41,7 +42,8 @@ export function CoffeeCard({
     }
   }
 
-  function handleRemoveCoffee() {
+  function handleRemoveCoffee() 
+  {
     removeList({ image, name, valueTotal, value, amount: coffeAmount })
   }
 

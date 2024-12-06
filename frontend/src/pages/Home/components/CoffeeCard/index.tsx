@@ -6,7 +6,7 @@ import {
   ButtonAmount,
   ButtonIconOnly,
   CardContainer,
-  CardImgContainer,
+  CardImageContainer,
   CoffeAmountContainer,
   CoffeDescription,
   CoffeName,
@@ -47,9 +47,9 @@ export function CoffeeCard({ name, img, tag, description, value }: CoffeeType) {
 
   return (
     <CardContainer>
-      <CardImgContainer>
+      <CardImageContainer>
         <img src={img} alt="Café" width="120px" />
-      </CardImgContainer>
+      </CardImageContainer>
       <TagContainer>
         {tag.map((tag) => (
           <TagText key={tag.id}>{tag.name}</TagText>

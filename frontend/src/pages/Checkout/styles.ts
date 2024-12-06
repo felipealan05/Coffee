@@ -6,7 +6,7 @@ export const ContainerSide = styled.div`
   column-gap: 2rem;
 `
 
-export const CheckoutCointainer = styled.main`
+export const CheckoutContainer = styled.main`
   flex: 1;
 
   display: flex;
@@ -15,7 +15,7 @@ export const CheckoutCointainer = styled.main`
   gap: 1rem;
 `
 
-export const DevilveryContainer = styled.div`
+export const DeliveryContainer = styled.div`
   flex: 1;
 
   display: flex;
@@ -87,6 +87,6 @@ export const IconContainer = styled.div<{ $color: string }>`
   border-radius: 50%;
 `
 
-export const TextAdress = styled.span`
+export const TextAddress = styled.span`
   text-transform: capitalize;
 `

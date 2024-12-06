@@ -9,8 +9,9 @@ export const CardContainer = styled.div`
   padding: 1rem 0;
   height: 19.375rem;
   justify-content: space-between;
+  padding: 10px
 `
-export const CardImgContainer = styled.div`
+export const CardImageContainer = styled.div`
   display: flex;
   margin-top: -2.8rem;
   justify-content: center;
@@ -110,6 +111,5 @@ export const ButtonIconOnly = styled.button`
   border: 0;
   padding: 0.5rem;
   border-radius: 8px;
-
   cursor: pointer;
 `

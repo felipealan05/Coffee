@@ -10,7 +10,6 @@ interface ModalProps {
 export function Modal({ setIsOpen, isOpen, children }: ModalProps) {
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)}>Open Modal</button>
       {isOpen && (
         <ModalContainer>
           <ModalContent>

@@ -2,7 +2,7 @@ import {
   BannerContainer,
   HomeContainer,
   IconContainer,
-  ImgContainer,
+  ImageContainer,
   InfoCard,
   InfoContainer,
   Menu,
@@ -219,12 +219,12 @@ export function Home() {
             </InfoCard>
           </InfoContainer>
         </TextContainer>
-        <ImgContainer>
+        <ImageContainer>
           <img
             src={banner}
             alt="Copo de Café com graos de café na sua volta  com fundo amarelo"
           />
-        </ImgContainer>
+        </ImageContainer>
       </BannerContainer>
       <MenuContainer>
         <MenuTitle>Nossos Cafés</MenuTitle>

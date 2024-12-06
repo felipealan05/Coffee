@@ -9,13 +9,13 @@ import {
     ButtonPayment,
     ButtonSend,
     ButtonText,
-    CartCointainer,
+    CartContainer,
     CoffeeHistoric,
     ContainerHistoric,
     ContainerSide,
     ContainerTotal,
     DeliveryFormContainer,
-    DevilveryContainer,
+    DeliveryContainer,
     IconSubText,
     IconText,
     InputContainer,
@@ -102,7 +102,7 @@ import {
     }
   
     return (
-      <CartCointainer>
+      <CartContainer>
         <ToastContainer
           position="top-right"
           autoClose={5000}
@@ -115,7 +115,7 @@ import {
           pauseOnHover
         />
         <ContainerSide>
-          <DevilveryContainer>
+          <DeliveryContainer>
             <TitleCart>Complete seu pedido</TitleCart>
             <DeliveryFormContainer>
               <SubTitleContainer>
@@ -237,7 +237,7 @@ import {
                 </ButtonPayment>
               </InputContainer>
             </DeliveryFormContainer>
-          </DevilveryContainer>
+          </DeliveryContainer>
           <ContainerHistoric>
             <TitleCart>Cafés selecionados</TitleCart>
             <CoffeeHistoric>
@@ -295,7 +295,7 @@ import {
             </CoffeeHistoric>
           </ContainerHistoric>
         </ContainerSide>
-      </CartCointainer>
+      </CartContainer>
     )
   }
   

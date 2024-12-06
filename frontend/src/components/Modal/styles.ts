@@ -41,3 +41,8 @@ export const XStyled = styled(X)`
     color: ${(props) => props.theme['red-500']};
   }
 `;
+
+export const ModalButton = styled.button `
+    border-radius: 1rem;
+    background-color: ${(props) => props.theme['purple-main']};
+`

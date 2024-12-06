@@ -14,16 +14,15 @@ export const ContainerSide = styled.div`
   column-gap: 2rem;
 `
 
-export const DevilveryContainer = styled.div`
+export const DeliveryContainer = styled.div`
   flex: 1;
-
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
   gap: 1rem;
 `
 
-export const CartCointainer = styled.main`
+export const CartContainer = styled.main`
   flex: 1;
 
   display: flex;
@@ -117,7 +116,6 @@ export const ButtonText = styled.span`
 
 export const ContainerHistoric = styled.div`
   flex: 1;
-
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
